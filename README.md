@@ -32,7 +32,6 @@ This script requires Python 3 and the following Python libraries:
 
 - pandas
 - xlrd
-- argparse
 - os
 
 ## Notes
