@@ -29,6 +29,7 @@ The cleaning process does this:
 This script assumes that the data in the Excel file is structured in a specific way, so it may not work correctly if the structure of your Excel file is different. Please adjust the code accordingly if your file's structure differs.
 
 This is my configuration:
+
 ![image](https://github.com/extremq/ing-cleaner/assets/45830561/7080f98e-f85e-4e0d-a412-26382cace7b0)
 
 
