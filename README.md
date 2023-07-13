@@ -1,6 +1,9 @@
 # ing-cleaner
 
-`ing-cleaner` is a Python script designed to clean ING transaction reports. This script specifically handles `.xls` Excel files, where it performs various cleaning operations, and outputs a cleaned `.xlsx` Excel file.
+`ing-cleaner` is a Python script designed to clean ING transaction reports. I use it for my Finance Google Sheet 
+and the file from ING isn't easily usable. 
+
+This script specifically handles `.xls` Excel files, where it performs various cleaning operations, and outputs a cleaned `.xlsx` Excel file.
 
 ## Script Usage
 
@@ -16,23 +19,10 @@ The `--output` argument is optional; if not provided, the script will output to 
 
 ## Cleaning Operations
 
-The cleaning process performed by this script includes the following steps:
-
-- Reads the input file using pandas and the 'xlrd' engine.
-- Sets the DataFrame's column names based on the third row of the file.
-- Removes the first four rows and last three rows.
-- Converts the 'Debit' and 'Credit' columns to string data type.
-- Replaces any 'NaN' values in the 'Debit' and 'Credit' columns with 0.
-- Formats the 'Data' column and converts it to a string in the format 'dd/mm/yyyy'.
-- Writes the cleaned DataFrame to an Excel file.
-
-## Requirements
-
-This script requires Python 3 and the following Python libraries:
-
-- pandas
-- xlrd
-- os
+The cleaning process does this:
+- Stores the date as a string in the format `DD/MM/YYYY`
+- Transforms the `,` to `.` inside numbers.
+- Removes unnecessary rows.
 
 ## Notes
 
